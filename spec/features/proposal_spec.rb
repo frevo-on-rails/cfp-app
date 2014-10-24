@@ -8,7 +8,6 @@ feature "Proposals" do
     fill_in 'Title', with: "General Principles Derived by Magic from My Personal Experience"
     fill_in 'Abstract', with: "Because certain things happened to me, they will happen in just the same manner to everyone."
     fill_in 'proposal_speakers_attributes_0_bio', with: "I am awesome."
-    fill_in 'Pitch', with: "You live but once; you might as well be amusing. - Coco Chanel"
     fill_in 'Details', with: "Plans are nothing; planning is everything. - Dwight D. Eisenhower"
     click_button 'Save'
   end

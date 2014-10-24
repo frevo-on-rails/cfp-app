@@ -78,7 +78,7 @@ class ProposalDecorator < ApplicationDecorator
       h.withdraw_proposal_path,
       method: :post,
       data: {
-        confirm: 'This will remove your talk from consideration and send an ' +
+        confirm: 'This will remove your proposal from consideration and send an ' +
                  'email to the event coordinator. Are you sure you want to do this?'
       },
       class: 'btn btn-warning',
@@ -110,11 +110,11 @@ class ProposalDecorator < ApplicationDecorator
   end
 
   def title_input(form)
-    form.input :title, placeholder: 'Title of the talk'
+    form.input :title, placeholder: 'Title of the proposal'
   end
 
   def abstract_input(form)
-    form.input :abstract, placeholder: 'What is your talk about?',
+    form.input :abstract, placeholder: 'What is your proposal about?',
       maxlength: :lookup, input_html: { class: 'watched', rows: 5 },
       hint: 'Provide a concise description for the program limited to 600 characters or less.'
   end

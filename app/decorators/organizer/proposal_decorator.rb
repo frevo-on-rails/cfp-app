@@ -39,7 +39,7 @@ class Organizer::ProposalDecorator < ProposalDecorator
       method: :delete,
       data: {
         confirm:
-          'This will delete this talk. Are you sure you want to do this? ' +
+          'This will delete this proposal. Are you sure you want to do this? ' +
           'It can not be undone.'
       },
       class: 'btn btn-danger navbar-btn',
